@@ -2,7 +2,7 @@
 
 ## Usage
 
-[https://barcodes-gen.uzakurahub.xyz?n=50&token=randomToken](https://barcodes-gen.uzakurahub.xyz?n=50&token=randomToken)
+[https://barcode-gen.uzakurahub.xyz?n=50&token=randomToken](https://barcode-gen.uzakurahub.xyz?n=50&token=randomToken)
 
 ### ⚠️Note:
 
