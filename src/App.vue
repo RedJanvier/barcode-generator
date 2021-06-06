@@ -1,10 +1,16 @@
 <template>
   <div id="app">
     <main v-if="show">
-      <input
+      <!-- <input
         v-model="ourLength"
         style="font-size: 16px; padding: 5px 10px; margin: 0 0 4rem 0;"
-      />
+      /> -->
+      <button
+        style="font-size: 16px; padding: 5px 50px; margin: 0 0 4rem 0; background: green; color: white;outline: none; border: none; box-shadow: 2px 2px 10px #e0e1e1"
+        @click="handlePrint"
+      >
+        Print
+      </button>
       <br />
       <section
         style="display: grid; grid-template-columns: repeat(3, 1fr); max-width: 600px;"
@@ -14,7 +20,7 @@
           <barcode
             text="Koko Market"
             :width="1.5"
-            :height="80"
+            :height="100"
             flat
             :value="x"
             format="CODE128B"
@@ -41,6 +47,9 @@ export default {
     };
   },
   methods: {
+    handlePrint() {
+      console.log('Print', this.barcodes);
+    },
     generateCode() {
       return (
         Math.random()

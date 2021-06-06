@@ -4,9 +4,9 @@
 
 [https://barcode-gen.uzakurahub.xyz?n=50&token=randomToken](https://barcode-gen.uzakurahub.xyz?n=50&token=randomToken)
 
-### ⚠️Note:
+## ⚠️DevNote:
 
-- [x] `n` query param stands for number of barcodes.
-- [x] `token` is set per link for constant barcodes per link.
+- `n` query param stands for number of barcodes.
+- `token` is set per link for constant barcodes per link.
 
 Made with ❤️ by [RedJanvier](https://github.com/redjanvier)
