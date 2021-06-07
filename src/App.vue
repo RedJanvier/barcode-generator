@@ -24,15 +24,24 @@
         </div>
       </section>
     </main>
-    <h1 v-else style="color: crimson;">Invalid/expired link</h1>
+    <div v-else>
+      <pricing />
+    </div>
   </div>
 </template>
 
 <script>
-import barcode from 'vue-barcode';
+import Vue from "vue";
+import { BootstrapVue } from "bootstrap-vue";
+
+// Import Bootstrap an BootstrapVue CSS files (order is important)
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap-vue/dist/bootstrap-vue.css";
+import barcode from "vue-barcode";
+import pricing from "./components/pricing.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   data() {
     return {
       ourLength: 1,
@@ -40,6 +49,7 @@ export default {
       show: false,
     };
   },
+
   methods: {
     generateCode() {
       return (
@@ -55,12 +65,12 @@ export default {
   created() {
     if (!location.search) return;
     if (
-      !location.search.includes('?n=') ||
-      !location.search.includes('&token=')
+      !location.search.includes("?n=") ||
+      !location.search.includes("&token=")
     )
       return;
-    const ourLength = +location.search.split('?n=')[1].split('&token=')[0];
-    const token = location.search.split('?n=')[1].split('&token=')[1];
+    const ourLength = +location.search.split("?n=")[1].split("&token=")[0];
+    const token = location.search.split("?n=")[1].split("&token=")[1];
     if (!token || !ourLength) return;
     this.ourLength = ourLength;
     this.show = true;
@@ -75,8 +85,11 @@ export default {
   },
   components: {
     barcode,
+    pricing,
   },
 };
+// Make BootstrapVue available throughout your project
+Vue.use(BootstrapVue);
 </script>
 
 <style>
