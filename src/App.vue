@@ -26,6 +26,7 @@
     </main>
     <div v-else>
       <navbar />
+      <banner />
       <pricing />
     </div>
   </div>
@@ -41,6 +42,7 @@ import "bootstrap-vue/dist/bootstrap-vue.css";
 import barcode from "vue-barcode";
 import pricing from "./components/pricing.vue";
 import navbar from "./components/navbar.vue";
+import banner from "./components/banner.vue";
 
 export default {
   name: "App",
@@ -89,6 +91,7 @@ export default {
     barcode,
     pricing,
     navbar,
+    banner,
   },
 };
 // Make BootstrapVue available throughout your project

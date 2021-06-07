@@ -21,7 +21,7 @@
         <b-col cols="12" sm="4">
           <b-card title="Most Popular" sub-title="Barcode" class="mostPopular">
             <b-card-text class="textCard">
-              ✅ 1000 > barcodes
+              ✅ 100 > barcodes
               <p>Sample picture</p>
               <img class="w-100" src="../assets/mostP.png" alt="Image 1" />
             </b-card-text>
@@ -38,7 +38,7 @@
         <b-col cols="12" sm="4">
           <b-card title="Premium" sub-title="Barcode" class="testCard">
             <b-card-text>
-              ✅ 1000 > barcodes
+              ✅ 100 > barcodes
               <p>Sample picture</p>
               <img class="w-100" src="../assets/premium.png" alt="Image 1" />
             </b-card-text>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <b-navbar toggleable="lg" type="dark" class="navBar">
-      <b-navbar-brand href="#">Uzakura</b-navbar-brand>
+      <b-navbar-brand href="#">UzakuraBarcode</b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
