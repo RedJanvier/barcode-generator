@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Choose the plan that’s right for you.</h1>
+    <h1 class="title">Choose the plan that’s right for you.</h1>
     <b-container class="bv-example-row cardDiv">
       <b-row>
         <b-col cols="12" sm="4">
@@ -102,5 +102,8 @@ export default {};
 }
 .textFreecard {
   margin-top: 4rem;
+}
+.title {
+  margin-top: 20px;
 }
 </style>

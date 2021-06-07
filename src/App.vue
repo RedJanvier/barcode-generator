@@ -25,6 +25,7 @@
       </section>
     </main>
     <div v-else>
+      <navbar />
       <pricing />
     </div>
   </div>
@@ -39,6 +40,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 import barcode from "vue-barcode";
 import pricing from "./components/pricing.vue";
+import navbar from "./components/navbar.vue";
 
 export default {
   name: "App",
@@ -86,6 +88,7 @@ export default {
   components: {
     barcode,
     pricing,
+    navbar,
   },
 };
 // Make BootstrapVue available throughout your project
@@ -93,12 +96,15 @@ Vue.use(BootstrapVue);
 </script>
 
 <style>
+* {
+  padding: 0;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 </style>
