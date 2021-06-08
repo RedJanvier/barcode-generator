@@ -10,7 +10,10 @@
         <b-navbar-nav class="ml-auto">
           <b-navbar-nav>
             <!-- <b-nav-item href="#">Product</b-nav-item> -->
-            <b-nav-item href="#">Pricing</b-nav-item>
+            <b-nav-item href="#"
+              ><router-link to="/">Home</router-link></b-nav-item
+            >
+            <b-nav-item href="#pricing">Pricing</b-nav-item>
             <!-- <b-nav-item href="#">Register</b-nav-item> -->
             <!-- <b-nav-item href="#">
               <b-button class="btn-most">Login</b-button>

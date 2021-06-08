@@ -11,11 +11,15 @@
               <img class="w-100" src="../assets/trial.png" alt="Image 1" />
             </b-card-text>
 
-            <b-card-text class="textFreecard"
-              ><span id="num">$0</span> / per barcode</b-card-text
-            >
+            <b-card-text class="textFreecard">
+              <span id="num">$0</span> / per barcode
+            </b-card-text>
 
-            <b-button variant="outline-primary">Get started</b-button>
+            <b-button variant="outline-primary">
+              <router-link to="/downloads?n=3&token=token&name=trial"
+                >Get Started</router-link
+              >
+            </b-button>
           </b-card>
         </b-col>
         <b-col cols="12" sm="4">
@@ -59,7 +63,9 @@
 // import free from "../assets/trial.png";
 // import most from "../assets/trial.png";
 // import pre from "../assets/trial.png";
-export default {};
+export default {
+  methods: {},
+};
 </script>
 
 <style scoped>
