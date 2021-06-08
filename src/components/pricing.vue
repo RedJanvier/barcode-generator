@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="pricing">
     <h1 class="title">Choose the plan that’s right for you.</h1>
     <b-container class="bv-example-row cardDiv">
       <b-row>
