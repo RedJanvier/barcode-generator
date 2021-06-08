@@ -1,28 +1,29 @@
 <template>
-  <div>
-    <b-navbar toggleable="lg" type="dark" class="navBar">
-      <b-navbar-brand href="#">UzakuraBarcode</b-navbar-brand>
+  <b-navbar toggleable="lg" type="dark" class="navBar">
+    <b-navbar-brand href="#">
+      <img class="logo img-responsive" src="../assets/UzB.jpg" alt="Logo" />
+      UzakuraBarcode
+    </b-navbar-brand>
 
-      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
-      <b-collapse id="nav-collapse" is-nav>
-        <!-- Right aligned nav items -->
-        <b-navbar-nav class="ml-auto">
-          <b-navbar-nav>
-            <!-- <b-nav-item href="#">Product</b-nav-item> -->
-            <b-nav-item href="#"
-              ><router-link to="/">Home</router-link></b-nav-item
-            >
-            <b-nav-item href="#pricing">Pricing</b-nav-item>
-            <!-- <b-nav-item href="#">Register</b-nav-item> -->
-            <!-- <b-nav-item href="#">
+    <b-collapse id="nav-collapse" is-nav>
+      <!-- Right aligned nav items -->
+      <b-navbar-nav class="ml-auto">
+        <b-navbar-nav>
+          <!-- <b-nav-item href="#">Product</b-nav-item> -->
+          <b-nav-item href="#"
+            ><router-link to="/">Home</router-link></b-nav-item
+          >
+          <b-nav-item href="#pricing">Pricing</b-nav-item>
+          <!-- <b-nav-item href="#">Register</b-nav-item> -->
+          <!-- <b-nav-item href="#">
               <b-button class="btn-most">Login</b-button>
             </b-nav-item> -->
-          </b-navbar-nav>
         </b-navbar-nav>
-      </b-collapse>
-    </b-navbar>
-  </div>
+      </b-navbar-nav>
+    </b-collapse>
+  </b-navbar>
 </template>
 
 <script>
@@ -32,6 +33,9 @@ export default {};
 <style scoped>
 .navBar {
   background-color: rgb(21, 21, 21);
+}
+.logo {
+  width: 50px;
 }
 .btn-most {
   background-color: rgb(160, 26, 26);
